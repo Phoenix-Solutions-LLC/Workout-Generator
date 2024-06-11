@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Phoenix Solutions</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <link rel="icon" href="../../img/icon_1x1_vertical.png">
+
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Comfortaa">
+    <script src="https://unpkg.com/pdf-lib@1.17.1/dist/pdf-lib.js"></script>
+    <script src="https://unpkg.com/downloadjs@1.4.7/download.js"></script>
+</head>
+<body>
+    <div id="canvas">
+        <div id="helper-card">
+            <div id="script" style="padding: 15px;">
+                <div style="font-weight: bold; font-size: larger; padding-bottom: 5px;">Guide</div>
+                <div style="padding-bottom: 7px;">Add an exercise to your split by selecting a day of the week and clicking on the exercise. Configure this exercise with the dropdown menu. Remove the exercise by middle-or-right-clicking.</div>
+                <div style="padding-bottom: 7px;">Configure your workout with the settings menu to the left. Leave the metrics empty if you do not opt for benchmark exercises. Generate with the bottom button and let the algorithm do the rest for you!</div>
+                <div style="padding-bottom: 7px;">Tip: Plyometrics train fast-twitch movements. Stretching increases mobility. Strength increases base strength. Cardio increases blood-flow in that muscle while burning calories.</div>
+                <div style="font-weight: bold; font-size: small; padding-bottom: 7px;">Version 1.0.0</div>
+            </div>
+        </div>
+        <div class="justify-left">
+            <div class="schedule">
+                <div class="schedule-card" style="left: 0px;">
+                    <div id="header">
+                        <div style="padding: 5px 10px 5px 10px;">Monday</div>
+                    </div>
+                    <div id="content">
+    
+                    </div>
+                </div>
+                <div class="schedule-card" style="left: 200px;">
+                    <div id="header">
+                        <div style="padding: 5px 10px 5px 10px;">Tuesday</div>
+                    </div>
+                    <div id="content">
+    
+                    </div>
+                </div>
+                <div class="schedule-card" style="left: 400px;">
+                    <div id="header">
+                        <div style="padding: 5px 10px 5px 10px;">Wednesday</div>
+                    </div>
+                    <div id="content">
+    
+                    </div>
+                </div>
+                <div class="schedule-card" style="left: 600px;">
+                    <div id="header">
+                        <div style="padding: 5px 10px 5px 10px;">Thursday</div>
+                    </div>
+                    <div id="content">
+    
+                    </div>
+                </div>
+                <div class="schedule-card" style="left: 800px;">
+                    <div id="header">
+                        <div style="padding: 5px 10px 5px 10px;">Friday</div>
+                    </div>
+                    <div id="content">
+    
+                    </div>
+                </div>
+                <div class="schedule-card" style="left: 1000px;">
+                    <div id="header">
+                        <div style="padding: 5px 10px 5px 10px;">Saturday</div>
+                    </div>
+                    <div id="content">
+    
+                    </div>
+                </div>
+                <div class="schedule-card" style="left: 1200px;">
+                    <div id="header">
+                        <div style="padding: 5px 10px 5px 10px;">Sunday</div>
+                    </div>
+                    <div id="content">
+    
+                    </div>
+                </div>
+            </div>
+            <div class="settings">
+                <div style="padding-top: 10px;">
+                    <div class="card" style="padding-bottom: 10px; margin-bottom: 10px;">
+                        <div style="font-size: large; font-weight: bold; padding: 7px 0px 7px 0px;">Current Metrics</div>
+                        <div>Bench Press Max</div>
+                        <input type="text" placeholder="135" id="bench-max" class="settings-input">
+                        <div>Squat Max</div>
+                        <input type="text" placeholder="225" id="squat-max" class="settings-input">
+                        <div>Deadlift Max</div>
+                        <input type="text" placeholder="315" id="deadlift-max" class="settings-input">
+                    </div>
+                    <div class="card" style="padding-bottom: 10px; margin-bottom: 10px;">
+                        <div style="font-size: large; font-weight: bold; padding: 7px 0px 7px 0px;">Goal Metrics</div>
+                        <div>Bench Press Max</div>
+                        <input type="text" placeholder="225" id="bench-goal" class="settings-input">
+                        <div>Squat Max</div>
+                        <input type="text" placeholder="315" id="squat-goal" class="settings-input">
+                        <div>Deadlift Max</div>
+                        <input type="text" placeholder="405" id="deadlift-goal" class="settings-input">
+                    </div>
+                    <div class="card" style="padding-bottom: 10px; margin-bottom: 10px;">
+                        <div style="font-size: large; font-weight: bold; padding: 7px 0px 7px 0px;">Logistics</div>
+                        <div>Weeks</div>
+                        <input type="text" placeholder="6" id="weeks-long" class="settings-input">
+                        <div>Equipment</div>
+                        <select id="equipment-dropdown" multiple>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="elements">
+            <div style="padding-top: 10px;">
+                <div id="exercises">
+                </div>
+            </div>
+        </div>
+        <div id="generate">
+            <div style="padding-top: 15px;">Generate</div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
